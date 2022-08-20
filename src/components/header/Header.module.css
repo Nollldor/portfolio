@@ -1,0 +1,9 @@
+.header {
+    height: 80px;
+    background-color: #74cbf5;
+    display: flex;
+}
+
+.headerContainer {
+    justify-content: flex-end;
+}
