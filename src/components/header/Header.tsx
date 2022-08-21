@@ -1,6 +1,7 @@
 import {FC} from "react";
-import styles from "./Header.module.css"
 import container from "../../common/styles/Container.module.css"
+import styles from "./Header.module.css"
+
 import {Nav} from "../nav/Nav";
 
 

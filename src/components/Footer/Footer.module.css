@@ -1,0 +1,25 @@
+.footerBlock {
+    height: 300px;
+    background-color: #f8a5cf;
+}
+
+.footerContainer {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+
+}
+
+.footerSocials {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLink {
+    background-color: #cfa7fc;
+    width: 60px;
+    height: 60px;
+}
