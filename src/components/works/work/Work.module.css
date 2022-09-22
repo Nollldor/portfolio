@@ -3,8 +3,9 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .icon {
@@ -23,8 +24,10 @@
 
 .workTitle {
     padding: 10px;
+    background-color: #caf8a5;
 }
 
 .workDescription {
     padding: 10px;
+    background-color: #74cbf5;
 }

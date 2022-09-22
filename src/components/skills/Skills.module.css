@@ -9,12 +9,22 @@
     justify-content: center;
 }
 
+.skillsBlockTitle {
+    background-color: white;
+}
+
 .skills{
     width: 100%;
     border: 1px solid;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+@media screen and (max-width: 1200px) {
+    .skillsBlock {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {

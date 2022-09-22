@@ -3,8 +3,10 @@
     border: 1px solid;
     display: flex;
     justify-content: space-around;
+    background-color: #cfa7fc;
 }
 
 .nav__link{
     text-decoration: none;
+    background-color: #caf8a5;
 }

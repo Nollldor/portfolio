@@ -3,10 +3,16 @@
     background-color: #cfa7fc;
 }
 
+
+
 .worksContainer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.worksBlockTitle {
+    background-color: #f8a5a5;
 }
 
 .works{
@@ -14,6 +20,13 @@
     border: 1px solid;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+    .worksBlock {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {

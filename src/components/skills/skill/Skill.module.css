@@ -8,6 +8,8 @@
     margin-bottom: 10px;
 }
 
+
+
 .icon {
     width: 60px;
     height: 60px;
@@ -16,8 +18,10 @@
 
 .skillTitle {
     padding: 10px;
+    background-color: #74cbf5;
 }
 
 .skillDescription {
     padding: 10px;
+    background-color: #9a9a9a;
 }
