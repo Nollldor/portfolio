@@ -14,4 +14,13 @@
     border: 1px solid;
     display: flex;
     justify-content: space-between;
+
+}
+
+@media screen and (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }

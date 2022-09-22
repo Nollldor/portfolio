@@ -13,3 +13,9 @@
     height: 400px;
     background-color: #9a9a9a;
 }
+
+@media screen and (max-width: 480px) {
+    .photo, .text {
+        width: 250px;
+    }
+}
