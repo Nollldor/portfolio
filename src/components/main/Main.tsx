@@ -8,7 +8,7 @@ type MainType = {}
 export const Main: FC<MainType> = () => {
 
     return (
-        <div className={styles.mainBlock}>
+        <section className={styles.mainBlock}>
             <div className={`${container.container}`}>
                 <div className={styles.text}>
                     <span>Hi there</span>
@@ -18,6 +18,6 @@ export const Main: FC<MainType> = () => {
                 <div className={styles.photo}></div>
             </div>
 
-        </div>
+        </section>
     )
 }

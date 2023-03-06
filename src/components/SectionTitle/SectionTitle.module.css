@@ -1,0 +1,44 @@
+.SectionTitleWrapper {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.SectionTitle {
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .SectionTitle {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .SectionTitle {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+}
+
+.SectionTitle h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: 600;
+    font-size: 35px;
+    display: inline-block;
+    z-index: 1;
+    color: #151515;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.SectionTitle p {
+    margin: 0;
+    font-size: 16px;
+}

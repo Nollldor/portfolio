@@ -1,6 +1,6 @@
 .worksBlock {
     height: 100vh;
-    background-color: #cfa7fc;
+    padding-bottom: 100px;
 }
 
 
@@ -17,7 +17,6 @@
 
 .works{
     width: 100%;
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -26,6 +25,7 @@
 @media screen and (max-width: 1200px) {
     .worksBlock {
         height: auto;
+        padding-bottom: 70px;
     }
 }
 

@@ -8,7 +8,7 @@ type MainType = {}
 export const Contacts: FC<MainType> = () => {
 
     return (
-        <div className={styles.contactsBlock}>
+        <section className={styles.contactsBlock}>
             <div className={`${container.container} ${styles.contactsContainer}`}>
                 <h2 className={styles.title}>Contacts</h2>
                 <form className={styles.contactsForm} action="">
@@ -18,7 +18,6 @@ export const Contacts: FC<MainType> = () => {
                 </form>
                 <button>Send</button>
             </div>
-
-        </div>
+        </section>
     )
 }

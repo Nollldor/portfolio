@@ -11,7 +11,7 @@ type SkillsType = {
 export const Skills: FC<SkillsType> = () => {
 
     return (
-        <div className={styles.skillsBlock}>
+        <section className={styles.skillsBlock}>
             <div className={`${container.container} ${styles.skillsContainer}`}>
                 <h2 className={styles.skillsBlockTitle}>Skills</h2>
                 <div className={styles.skills}>
@@ -20,6 +20,6 @@ export const Skills: FC<SkillsType> = () => {
                     <Skill title={"CSS"} description={"blabla"} icon={"icon"}/>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

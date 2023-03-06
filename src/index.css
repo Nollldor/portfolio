@@ -361,3 +361,19 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+
+
+
+section {
+  padding: 100px 0;
+}
