@@ -6,6 +6,8 @@ import {SectionTitle} from "../SectionTitle/SectionTitle";
 import {faReact} from '@fortawesome/free-brands-svg-icons';
 import {faJs} from "@fortawesome/free-brands-svg-icons";
 import {faCss3} from "@fortawesome/free-brands-svg-icons/faCss3";
+import {faCircleNodes} from "@fortawesome/free-solid-svg-icons";
+import {faHtml5} from "@fortawesome/free-brands-svg-icons";
 
 type SkillsPropsType = {}
 
@@ -26,6 +28,12 @@ export const Skills: FC<SkillsPropsType> = () => {
                     <Skill title={"CSS"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                            icon={faCss3}/>
+                    <Skill title={"Redux"}
+                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                           icon={faCircleNodes}/>
+                    <Skill title={"HTML"}
+                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                           icon={faHtml5}/>
                 </div>
             </div>
         </section>
