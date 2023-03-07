@@ -1,11 +1,7 @@
 .skillsBlock {
-    height: 100vh;
 }
 
 .skillsContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .skillsBlockTitle {
@@ -13,11 +9,10 @@
 }
 
 .skills{
-    width: 100%;
-    border: 1px solid;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 @media screen and (max-width: 1200px) {
