@@ -1,18 +1,42 @@
-.workBlock {
-    width: 300px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-    text-align: center;
+.workBlockWrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 15px;
 }
 
-.icon {
-    width: 300px;
-    height: 200px;
-    background-color: #9a9a9a;
-    position: relative;
+@media screen and (min-width: 768px){
+    .workBlockWrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .workBlockWrapper {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+}
+
+.workBlock {
+    background: #fff;
+    box-shadow: 0px 1px 27px -3px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    .workBlock {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+img {
+    max-width: 100%;
 }
 
 .workButton {
@@ -22,12 +46,26 @@
     transform: translate(-50%,-50%);
 }
 
-.workTitle {
-    padding: 10px;
-    background-color: #caf8a5;
+.content {
+    padding: 15px;
+}
+
+@media screen and (max-width: 991px) {
+    .content {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.content h4 {
+    color: #151515;
+    font-size: 18px;
+    margin: 0 0 20px;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .workDescription {
-    padding: 10px;
-    background-color: #74cbf5;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }

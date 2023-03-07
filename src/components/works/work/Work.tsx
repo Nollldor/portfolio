@@ -2,22 +2,26 @@ import {FC} from "react";
 import styles from "./Work.module.css"
 
 
-type SkillType = {
+type WorkPropsType = {
     title: string
     icon: string
     description: string
 }
 
-export const Work: FC<SkillType> = ({title, description, icon}) => {
+export const Work: FC<WorkPropsType> = ({title, description, icon}) => {
 
     return (
-        <div className={styles.workBlock}>
-            <div className={styles.icon}>
-                <img src={icon} alt={"work icon"}/>
-                <button className={styles.workButton}>See more</button>
+        <div className={styles.workBlockWrapper}>
+            <div className={styles.workBlock}>
+                <a href={"#"} className={styles.icon}>
+                    <img src={icon} alt={"work icon"} title={"work icon"}/>
+                    {/* <button className={styles.workButton}>See more</button>*/}
+                </a>
+                <div className={styles.content}>
+                    <h4 className={styles.workTitle}>{title}</h4>
+                    <p className={styles.workDescription}>{description}</p>
+                </div>
             </div>
-            <h3 className={styles.workTitle}>{title}</h3>
-            <span className={styles.workDescription}>{description}</span>
         </div>
     )
 }

@@ -362,6 +362,10 @@ template {
   display: none;
 }
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -372,7 +376,10 @@ body {
 }
 
 
-
+img {
+  vertical-align: middle;
+  border-style: none;
+}
 
 section {
   padding: 100px 0;

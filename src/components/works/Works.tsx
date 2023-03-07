@@ -3,11 +3,12 @@ import container from "../../common/styles/Container.module.css";
 import styles from "./Works.module.css"
 import {Work} from "./work/Work";
 import {SectionTitle} from "../SectionTitle/SectionTitle";
+import work1Image from "../../common/img/work-img1.jpg"
 
 
-type SkillsType = {}
+type SkillsPropsType = {}
 
-export const Works: FC<SkillsType> = () => {
+export const Works: FC<SkillsPropsType> = () => {
 
     return (
         <section className={styles.worksBlock}>
@@ -17,11 +18,19 @@ export const Works: FC<SkillsType> = () => {
                 <div className={styles.works}>
                     <Work title={"TodoList"}
                           description={"blablabl blablablablabl ablablablabla ablablablabla ablablablabla ablablablabla ablablablabla"}
-                          icon={"icon"}/>
-                    <Work title={"Social Network"} description={"blabla"} icon={"icon"}/>
-                    <Work title={"Social Network"} description={"blabla"} icon={"icon"}/>
-                    <Work title={"Social Network"} description={"blabla"} icon={"icon"}/>
-                    <Work title={"Social Network"} description={"blabla"} icon={"icon"}/>
+                          icon={work1Image}/>
+                    <Work title={"Social Network"}
+                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}
+                          icon={work1Image}/>
+                    <Work title={"Social Network"}
+                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}
+                          icon={work1Image}/>
+                    <Work title={"Social Network"}
+                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}
+                          icon={work1Image}/>
+                    <Work title={"Social Network"}
+                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}
+                          icon={work1Image}/>
                 </div>
             </div>
         </section>
