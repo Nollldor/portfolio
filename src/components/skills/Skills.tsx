@@ -3,37 +3,22 @@ import styles from "./Skills.module.css"
 import container from "../../common/styles/Container.module.css";
 import {Skill} from "./skill/Skill";
 import {SectionTitle} from "../SectionTitle/SectionTitle";
-import {faReact} from '@fortawesome/free-brands-svg-icons';
-import {faJs} from "@fortawesome/free-brands-svg-icons";
-import {faCss3} from "@fortawesome/free-brands-svg-icons/faCss3";
-import {faCircleNodes} from "@fortawesome/free-solid-svg-icons";
-import {faHtml5} from "@fortawesome/free-brands-svg-icons";
+import {SkillsState} from "./skill/skills-state";
 
 type SkillsPropsType = {}
 
 export const Skills: FC<SkillsPropsType> = () => {
-
+    const SkillsData = SkillsState
     return (
         <section className={styles.skillsBlock}>
             <div className={`${container.container} ${styles.skillsContainer}`}>
                 <SectionTitle title={"Skills"}
                               subTitle={"I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface."}/>
                 <div className={styles.skills}>
-                    <Skill title={"JS"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-                           icon={faJs}/>
-                    <Skill title={"REACT"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-                           icon={faReact}/>
-                    <Skill title={"CSS"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-                           icon={faCss3}/>
-                    <Skill title={"Redux"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-                           icon={faCircleNodes}/>
-                    <Skill title={"HTML"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-                           icon={faHtml5}/>
+                    {
+                        SkillsData.map((skill, id) => <Skill key={id} title={skill.title}
+                                                             description={skill.description} icon={skill.icon}/>)
+                    }
                 </div>
             </div>
         </section>
