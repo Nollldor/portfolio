@@ -9,7 +9,7 @@ type MainType = {}
 export const Contacts: FC<MainType> = () => {
 
     return (
-        <section className={styles.contactsBlock}>
+        <section id={"contacts"} className={styles.contactsBlock}>
             <div className={`${container.container} ${styles.contactsContainer}`}>
                 <SectionTitle title={"Contacts"}
                               subTitle={"I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface."}/>

@@ -11,7 +11,7 @@ type SkillsPropsType = {}
 export const Works: FC<SkillsPropsType> = () => {
     const WorksData = WorksState
     return (
-        <section className={styles.worksBlock}>
+        <section id={"works"} className={styles.worksBlock}>
             <div className={`${container.container} ${styles.worksContainer}`}>
                 <SectionTitle title={"My works"}
                               subTitle={'I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface.'}/>

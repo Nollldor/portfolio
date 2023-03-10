@@ -8,7 +8,7 @@ type MainType = {}
 export const Main: FC<MainType> = () => {
 
     return (
-        <section className={styles.mainBlock}>
+        <section id={"home"} className={styles.mainBlock}>
             <div className={`${container.container}`}>
                 <div className={styles.text}>
                     <span>Hi there</span>

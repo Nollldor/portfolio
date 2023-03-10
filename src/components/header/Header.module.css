@@ -1,15 +1,94 @@
 .header {
-    height: 80px;
-    background-color: #74cbf5;
     display: flex;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 0;
+    padding: 12px 10px;
+    background: #111;
+    box-shadow: 0px 1px 27px -3px rgb(0 0 0 / 20%);
+    position: fixed;
+    z-index: 1030;
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        padding: 10px 15px;
+    }
+}
+
+.headerBrand {
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+    font-size: 23px;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.headerBrand .theme {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 12px;
+    right: -9px;
+    float: left;
+    background: #00c6ff;
 }
 
 .headerContainer {
-    justify-content: flex-end;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
     .headerContainer {
-        justify-content: center;
+        flex-wrap: nowrap;
     }
+}
+@media screen and (max-width: 991px) {
+    .headerContainer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.headerToggler {
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    .headerToggler {
+        display: none;
+    }
+}
+
+.headerToggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #fff;
 }
