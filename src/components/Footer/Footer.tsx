@@ -1,6 +1,8 @@
 import {FC} from "react";
 import styles from "./Footer.module.css"
 import container from "../../common/styles/Container.module.css"
+import {faFacebook, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 type MainType = {}
@@ -8,18 +10,34 @@ type MainType = {}
 export const Footer: FC<MainType> = () => {
 
     return (
-        <div className={styles.footerBlock}>
+        <footer className={styles.footer}>
             <div className={`${container.container} ${styles.footerContainer}`}>
-                <h2 className={styles.title}>Arthur Ishmiev</h2>
-                <div className={styles.footerSocials}>
-                    <a className={styles.footerLink} href=""><img src="" alt=""/></a>
-                    <a className={styles.footerLink} href=""><img src="" alt=""/></a>
-                    <a className={styles.footerLink} href=""><img src="" alt=""/></a>
-                    <a className={styles.footerLink} href=""><img src="" alt=""/></a>
+                <div className={styles.footerLogo}>
+                    <span>Ishmiev
+                        <span></span>
+                    </span>
                 </div>
-                <span>CopyRight</span>
+                <ul className={styles.footerSocials}>
+                    <li>
+                        <a className={styles.footerLink} href="#">
+                            <FontAwesomeIcon icon={faFacebook}/>
+                        </a>
+                    </li>
+                    <li>
+                        <a className={styles.footerLink} href="#">
+                            <FontAwesomeIcon icon={faTwitter} />
+                        </a>
+                    </li>
+                    <li>
+                        <a className={styles.footerLink} href="#">
+                            <FontAwesomeIcon icon={faLinkedin}/>
+                        </a>
+                    </li>
+
+                </ul>
+                <p className={"copyright"}>© 2018 Ishmiev. All Rights Reserved</p>
             </div>
 
-        </div>
+        </footer>
     )
 }
