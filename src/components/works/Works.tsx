@@ -17,7 +17,7 @@ export const Works: FC<SkillsPropsType> = () => {
                               subTitle={'I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface.'}/>
                 <div className={styles.works}>
                     {
-                        WorksData.map((work, id)=> <Work title={work.title}
+                        WorksData.map((work, id)=> <Work key={id} title={work.title}
                               description={work.subtitle}
                               icon={work.icon}/>)
                     }
