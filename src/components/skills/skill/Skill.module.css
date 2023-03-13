@@ -81,3 +81,7 @@
     transition: ease all 0.3s;
     background: #00c6ff;
 }
+
+.skillBlock:hover .icon {
+    background: #333;
+}
