@@ -7,7 +7,7 @@ import {faRoute} from "@fortawesome/free-solid-svg-icons";
 import {faEnvelopeCircleCheck} from "@fortawesome/free-solid-svg-icons";
 import {faMobileScreen} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
+import {Button} from "../Button/Button";
 
 type ContactsPropsType = {}
 
@@ -104,7 +104,9 @@ export const Contacts: FC<ContactsPropsType> = () => {
                                                   value={formik.values.text}/>
                                         {formik.touched.text && <div>{formik.errors.text}</div>}
                                     </div>
-                                    <button type={"submit"}>Send</button>
+                                    <div className={styles.send}>
+                                        <Button title={'Send'} type={"submit"}/>
+                                    </div>
                                 </form>
                             </div>
                         </div>
