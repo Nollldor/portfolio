@@ -92,7 +92,10 @@
 
 .formGroup {
     margin-bottom: 1rem;
+    position: relative;
 }
+
+
 
 .formControl {
     border-radius: 0;
@@ -116,8 +119,24 @@
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }
 
+.error {
+    border-color: #F8A5CFFF;
+    box-shadow: 0 0 0 0.2rem rgb(185, 74, 130);
+}
+
+.errorMessage {
+    color: #B94A82FF;
+    font-size: 14px;
+}
+
 .formGroup textarea {
     height: 100px;
     overflow: auto;
     resize: vertical;
+}
+
+.send {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

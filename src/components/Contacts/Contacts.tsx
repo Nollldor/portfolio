@@ -13,7 +13,6 @@ type ContactsPropsType = {}
 
 type FormikErrorType = {
     email?: string
-    password?: string
 }
 
 export const Contacts: FC<ContactsPropsType> = () => {
@@ -29,7 +28,7 @@ export const Contacts: FC<ContactsPropsType> = () => {
         validate: (values) => {
             const errors: FormikErrorType = {}
             if (!values.email) {
-                errors.email = 'Required'
+                errors.email = 'email required'
             } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
                 errors.email = 'Invalid email address'
             }
@@ -76,36 +75,42 @@ export const Contacts: FC<ContactsPropsType> = () => {
                                 <h2 className={styles.subTitle}>Say Something</h2>
                                 <form onSubmit={formik.handleSubmit}>
                                     <div className={styles.formGroup}>
-                                        <input className={styles.formControl} id={'name'} name={'name'}
-                                               placeholder={'Name'}
-                                               onChange={formik.handleChange}
-                                               value={formik.values.name}/>
-                                        {formik.touched.name && <div>{formik.errors.name}</div>}
+                                        <input
+                                            className={formik.errors.name ? `${styles.formControl} ${styles.error}` : styles.formControl}
+                                            id={'name'} name={'name'}
+                                            placeholder={'Name'}
+                                            onChange={formik.handleChange}
+                                            value={formik.values.name}/>
+                                        {/*{formik.touched.name && <div className={styles.error}>{formik.errors.name}</div>}*/}
                                     </div>
                                     <div className={styles.formGroup}>
-                                        <input className={styles.formControl} id={'email'} name={'email'}
-                                               placeholder={'Email'}
-                                               onChange={formik.handleChange}
-                                               value={formik.values.email}/>
-                                        {formik.touched.email && <div>{formik.errors.email}</div>}
+                                        <input
+                                            className={formik.errors.email ? `${styles.formControl} ${styles.error}` : styles.formControl}
+                                            id={'email'} name={'email'}
+                                            placeholder={'Email'}
+                                            onChange={formik.handleChange}
+                                            value={formik.values.email}/>
                                     </div>
                                     <div className={styles.formGroup}>
-                                        <input className={styles.formControl} id={'subject'} name={'subject'}
-                                               placeholder={'Subject'}
-                                               onChange={formik.handleChange}
-                                               value={formik.values.subject}/>
-                                        {formik.touched.subject && <div>{formik.errors.subject}</div>}
+                                        <input
+                                            className={formik.errors.subject ? `${styles.formControl} ${styles.error}` : styles.formControl}
+                                            id={'subject'} name={'subject'}
+                                            placeholder={'Subject'}
+                                            onChange={formik.handleChange}
+                                            value={formik.values.subject}/>
                                     </div>
                                     <div className={styles.formGroup}>
-                                        <textarea className={styles.formControl} id={'text'} name={'text'}
-                                                  placeholder={'Text'}
-                                                  rows={3}
-                                                  onChange={formik.handleChange}
-                                                  value={formik.values.text}/>
-                                        {formik.touched.text && <div>{formik.errors.text}</div>}
+                                        <textarea
+                                            className={formik.errors.text ? `${styles.formControl} ${styles.error}` : styles.formControl}
+                                            id={'text'} name={'text'}
+                                            placeholder={'Text'}
+                                            rows={3}
+                                            onChange={formik.handleChange}
+                                            value={formik.values.text}/>
                                     </div>
                                     <div className={styles.send}>
                                         <Button title={'Send'} type={"submit"}/>
+                                        {formik.touched.email && <div className={styles.errorMessage}>{formik.errors.email}</div>}
                                     </div>
                                 </form>
                             </div>
