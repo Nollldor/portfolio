@@ -1,15 +1,20 @@
-.header {
+.nav {
     display: flex;
-
-    top: 0;
     right: 0;
     left: 0;
+    position: fixed;
+    z-index: 1030;
+    top: 10px;
+    padding: 15px 10px;
+    transition: all 0.2s ease;
+}
+
+.fixedNav {
+    top: 0;
     margin-top: 0;
     padding: 12px 10px;
     background: #111;
-    box-shadow: 0px 1px 27px -3px rgb(0 0 0 / 20%);
-    position: fixed;
-    z-index: 1030;
+    box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 991px) {
@@ -92,3 +97,4 @@
     border-radius: 1px;
     background: #fff;
 }
+

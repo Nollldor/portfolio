@@ -1,10 +1,11 @@
-.mainBlock {
+.homeBlock {
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right center;
     background-size: cover;
     background-image: url('../../common/img/mainOverlay.jpg');
+    padding: 0;
 }
 
 .row {
@@ -182,4 +183,25 @@
         opacity: 0.1;
         top: 22px
     }
+}
+
+.decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.decorationItem {
+    float: left;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(153, 153, 153, 0.11);
+    position: relative;
+}
+
+.decorationItem:first-child {
+    border-left: 1px solid rgba(153, 153, 153, 0.11);
 }

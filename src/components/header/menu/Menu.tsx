@@ -8,8 +8,10 @@ type MenuType = {
 
 export const Menu: FC<MenuType> = ({collapsed}) => {
 
+    const menuClassName = `${styles.menu} ${collapsed? styles.collapsed : ''}`
+
     return (
-        <ul className={`${styles.menu} ${collapsed? styles.collapsed : ''}`}>
+        <ul className={menuClassName}>
             <li>
                 <a className={styles.menu__link} href="#home">home</a>
             </li>

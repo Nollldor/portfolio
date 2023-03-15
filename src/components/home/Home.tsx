@@ -1,13 +1,23 @@
 import {FC} from "react";
-import styles from "./Main.module.css"
+import styles from "./Home.module.css"
 import container from "../../common/styles/Container.module.css"
+import commonStyles from "../../common/styles/CommonStyles.module.css"
 
 type MainType = {}
 
-export const Main: FC<MainType> = () => {
+export const Home: FC<MainType> = () => {
 
     return (
-        <section id={"home"} className={styles.mainBlock}>
+        <section id={"home"} className={styles.homeBlock}>
+            <div className={styles.decoration}>
+                <div className={`${container.container} ${commonStyles.fullHeight}`}>
+                    <div className={styles.decorationItem}></div>
+                    <div className={styles.decorationItem}></div>
+                    <div className={styles.decorationItem}></div>
+                    <div className={styles.decorationItem}></div>
+                    <div className={styles.decorationItem}></div>
+                </div>
+            </div>
             <div className={`${container.container}`}>
                 <div className={styles.row}>
                     <div className={styles.contentWrapper}>
