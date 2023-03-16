@@ -1,14 +1,23 @@
-import {FC} from "react";
+import {FC, useEffect, useState} from "react";
 import styles from "./Menu.module.css"
+import {CollapsedType} from "../Header";
 
 
 type MenuType = {
-    collapsed: boolean
+    collapsed: CollapsedType
 }
 
 export const Menu: FC<MenuType> = ({collapsed}) => {
-
-    const menuClassName = `${styles.menu} ${collapsed? styles.collapsed : ''}`
+    const [menuClassName, setMenuClassName] = useState(styles.menu)
+    useEffect(() => {
+        if (collapsed === 'collapsed') {
+            setMenuClassName(`${styles.menu} ${styles.collapsed}`)
+        } else if (collapsed === 'close') {
+            setMenuClassName(`${styles.menu} ${styles.close}`)
+        } else if (collapsed === 'uncollapsed') {
+            setMenuClassName(styles.menu)
+        }
+    }, [collapsed])
 
     return (
         <ul className={menuClassName}>

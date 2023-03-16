@@ -6,9 +6,11 @@ import {Menu} from "./menu/Menu";
 
 
 type HeaderType = {}
+export type CollapsedType = 'close' | 'collapsed' | 'uncollapsed'
+
 
 export const Header: FC<HeaderType> = () => {
-    const [menuCollapsed, setMenuCollapsed] = useState<boolean>(true)
+    const [menuCollapsed, setMenuCollapsed] = useState<CollapsedType>('collapsed')
     const [scroll, setScroll] = useState<boolean>(false)
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, {passive: true});
@@ -20,7 +22,6 @@ export const Header: FC<HeaderType> = () => {
 
 
     const handleScroll = () => {
-        console.log(window.scrollY)
         if (window.scrollY > 0) {
             setScroll(true)
         } else {
@@ -29,7 +30,14 @@ export const Header: FC<HeaderType> = () => {
     }
 
     const collapseMenu = () => {
-        setMenuCollapsed(!menuCollapsed)
+        if (menuCollapsed === 'collapsed') {
+            setMenuCollapsed('uncollapsed')
+        } else {
+            setMenuCollapsed('close')
+            setTimeout(()=>{
+                setMenuCollapsed('collapsed')
+            }, 500)
+        }
     }
 
 
@@ -52,3 +60,15 @@ export const Header: FC<HeaderType> = () => {
         </header>
     )
 }
+
+/*
+const [menuClassName, setMenuClassName] = useState(styles.menu)
+useEffect(() => {
+    if (collapsed === 'collapsed') {
+        setMenuClassName(`${styles.menu} ${styles.collapsed}`)
+    } else if (collapsed === 'close') {
+        setMenuClassName(`${styles.menu} ${styles.close}`)
+    } else if (collapsed === 'uncollapsed') {
+        setMenuClassName(styles.menu)
+    }
+}, [collapsed])*/

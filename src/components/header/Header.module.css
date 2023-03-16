@@ -18,10 +18,12 @@
 }
 
 @media screen and (max-width: 991px) {
-    .header {
+    .nav {
         flex-flow: row nowrap;
         justify-content: flex-start;
         padding: 10px 15px;
+        background: #111;
+        overflow: hidden;
     }
 }
 

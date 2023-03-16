@@ -4,7 +4,6 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
@@ -15,7 +14,7 @@
     }
 }
 
-@keyframes anim {
+@keyframes open {
     0% {height: 0;}
     100% {height: 154px;}
 }
@@ -24,8 +23,17 @@
     .menu {
         padding-top: 5px;
         flex-basis: 100%;
-        animation: anim 0.5s;
+        animation: open 0.5s;
     }
+}
+
+@keyframes close {
+    0% {height: 154px;}
+    100% {height: 0;}
+}
+
+.close {
+    animation: close 0.5s;
 }
 
 .collapsed {
@@ -76,8 +84,6 @@
     transition: ease all 0.2s;
 }
 
-.menu__link:hover::after, .menu__link active::after  {
+.menu__link:hover:after {
     width: 75%;
 }
-
-
