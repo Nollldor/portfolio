@@ -18,7 +18,7 @@ type FormikErrorType = {
 export const Contacts: FC<ContactsPropsType> = () => {
 
 
-    const formik = useFormik({
+    /*const formik = useFormik({
         initialValues: {
             name: '',
             email: '',
@@ -38,7 +38,7 @@ export const Contacts: FC<ContactsPropsType> = () => {
             console.log(values)
             formik.resetForm()
         },
-    })
+    })*/
 
     return (
         <section id={"contacts"} className={styles.contactsBlock}>
@@ -73,51 +73,50 @@ export const Contacts: FC<ContactsPropsType> = () => {
                         <div className={styles.column}>
                             <div className={styles.contactForm}>
                                 <h2 className={styles.subTitle}>Say Something</h2>
-                                <form onSubmit={formik.handleSubmit}>
+                                <form method="POST"
+                                      action="https://public.herotofu.com/v1/acdabd90-c3ef-11ed-aae2-49fd856067b7">
                                     <div className={styles.formGroup}>
                                         <input
-                                            className={formik.errors.name ? `${styles.formControl} ${styles.error}` : styles.formControl}
-                                            id={'name'} name={'name'}
+                                            className={styles.formControl}
+                                            id={'name'} name={'name'} type={'text'}
                                             placeholder={'Name'}
-                                            onChange={formik.handleChange}
-                                            value={formik.values.name}/>
+                                            required
+                                        />
                                         {/*{formik.touched.name && <div className={styles.error}>{formik.errors.name}</div>}*/}
                                     </div>
                                     <div className={styles.formGroup}>
                                         <input
-                                            className={formik.errors.email ? `${styles.formControl} ${styles.error}` : styles.formControl}
+                                            className={styles.formControl}
                                             id={'email'} name={'email'}
                                             placeholder={'Email'}
-                                            onChange={formik.handleChange}
-                                            value={formik.values.email}/>
+                                            type={'email'}
+                                            required
+                                        />
                                     </div>
                                     <div className={styles.formGroup}>
                                         <input
-                                            className={formik.errors.subject ? `${styles.formControl} ${styles.error}` : styles.formControl}
+                                            className={styles.formControl}
                                             id={'subject'} name={'subject'}
                                             placeholder={'Subject'}
-                                            onChange={formik.handleChange}
-                                            value={formik.values.subject}/>
+                                        />
                                     </div>
                                     <div className={styles.formGroup}>
                                         <textarea
-                                            className={formik.errors.text ? `${styles.formControl} ${styles.error}` : styles.formControl}
+                                            className={styles.formControl}
                                             id={'text'} name={'text'}
                                             placeholder={'Text'}
                                             rows={3}
-                                            onChange={formik.handleChange}
-                                            value={formik.values.text}/>
+                                            required
+                                        />
                                     </div>
                                     <div className={styles.send}>
                                         <Button title={'Send'} type={"submit"}/>
-                                        {formik.touched.email && <div className={styles.errorMessage}>{formik.errors.email}</div>}
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     )
