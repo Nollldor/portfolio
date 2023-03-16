@@ -86,6 +86,25 @@
     margin: 0;
 }
 
+@media screen and (max-width: 767px) {
+    .content {
+        padding-left: 25px;
+    }
+    .content h4 {
+        font-size: 16px;
+        color: #fff;
+        margin: 0 0 5px;
+    }
+    .content h5 {
+        font-size: 36px;
+        margin: 0 0 10px;
+    }
+    .content p {
+        font-size: 14px;
+        padding: 0 0 20px;
+    }
+}
+
 .cvLink {
     color: #fff;
     text-transform: uppercase;
