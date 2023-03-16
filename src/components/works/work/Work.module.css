@@ -69,3 +69,29 @@ img {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
+.readMoreLink {
+    color: #151515;
+    font-weight: 600;
+    position: relative;
+    padding: 3px;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.readMoreIcon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    opacity: 0;
+    transition: ease all 0.4s;
+}
+
+.readMoreLink:hover .readMoreIcon {
+    right: -20px;
+    opacity: 1;
+}

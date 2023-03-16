@@ -1,5 +1,7 @@
 import {FC} from "react";
 import styles from "./Work.module.css"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 
 type WorkPropsType = {
@@ -20,6 +22,12 @@ export const Work: FC<WorkPropsType> = ({title, description, icon}) => {
                 <div className={styles.content}>
                     <h4 className={styles.workTitle}>{title}</h4>
                     <p className={styles.workDescription}>{description}</p>
+                    <div className={styles.readMore}>
+                        <a href="#" className={styles.readMoreLink}>
+                            Read more
+                            <FontAwesomeIcon icon={faArrowRight} className={styles.readMoreIcon}/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
