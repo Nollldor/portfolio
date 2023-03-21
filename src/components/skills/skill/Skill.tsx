@@ -1,5 +1,5 @@
 import {FC} from "react";
-import styles from "./Skill.module.css"
+import styles from "./Skill.module.scss"
 import {IconDefinition} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -17,7 +17,6 @@ export const Skill: FC<SkillPropsType> = ({title, description, icon}) => {
             <div className={styles.skillBlock}>
                 <a href={"#"} className={styles.icon}>
                     <FontAwesomeIcon icon={icon}/>
-                    {/* <button className={styles.workButton}>See more</button>*/}
                 </a>
                 <div className={styles.content}>
                     <h5 className={styles.skillTitle}>{title}</h5>
