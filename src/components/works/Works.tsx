@@ -1,6 +1,6 @@
 import {FC} from "react";
 import container from "../../common/styles/Container.module.css";
-import styles from "./Works.module.css"
+import styles from "./Works.module.scss"
 import {Work} from "./work/Work";
 import {SectionTitle} from "../SectionTitle/SectionTitle";
 import {WorksState} from "./works-state";

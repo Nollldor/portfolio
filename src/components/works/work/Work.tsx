@@ -1,5 +1,5 @@
 import {FC} from "react";
-import styles from "./Work.module.css"
+import styles from "./Work.module.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
@@ -17,7 +17,6 @@ export const Work: FC<WorkPropsType> = ({title, description, icon}) => {
             <div className={styles.workBlock}>
                 <a href={"#"} className={styles.icon}>
                     <img src={icon} alt={"work icon"} title={"work icon"}/>
-                    {/* <button className={styles.workButton}>See more</button>*/}
                 </a>
                 <div className={styles.content}>
                     <h4 className={styles.workTitle}>{title}</h4>
