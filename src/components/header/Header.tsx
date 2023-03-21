@@ -1,6 +1,6 @@
 import {FC, useEffect, useState} from "react";
 import container from "../../common/styles/Container.module.css"
-import styles from "./Header.module.css"
+import styles from "./Header.module.scss"
 
 import {Menu} from "./menu/Menu";
 
