@@ -1,5 +1,5 @@
 import {FC} from "react";
-import styles from "./Footer.module.css"
+import styles from "./Footer.module.scss"
 import container from "../../common/styles/Container.module.css"
 import {faFacebook, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
