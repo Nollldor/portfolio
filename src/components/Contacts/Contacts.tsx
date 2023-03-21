@@ -1,8 +1,7 @@
 import {FC} from "react";
-import styles from "./Contacts.module.css"
+import styles from "./Contacts.module.scss"
 import container from "../../common/styles/Container.module.css"
 import {SectionTitle} from "../SectionTitle/SectionTitle";
-import {useFormik} from "formik";
 import {faRoute} from "@fortawesome/free-solid-svg-icons";
 import {faEnvelopeCircleCheck} from "@fortawesome/free-solid-svg-icons";
 import {faMobileScreen} from "@fortawesome/free-solid-svg-icons";
@@ -16,29 +15,6 @@ type FormikErrorType = {
 }
 
 export const Contacts: FC<ContactsPropsType> = () => {
-
-
-    /*const formik = useFormik({
-        initialValues: {
-            name: '',
-            email: '',
-            subject: '',
-            text: ''
-        },
-        validate: (values) => {
-            const errors: FormikErrorType = {}
-            if (!values.email) {
-                errors.email = 'email required'
-            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-                errors.email = 'Invalid email address'
-            }
-            return errors
-        },
-        onSubmit: values => {
-            console.log(values)
-            formik.resetForm()
-        },
-    })*/
 
     return (
         <section id={"contacts"} className={styles.contactsBlock}>
@@ -82,7 +58,6 @@ export const Contacts: FC<ContactsPropsType> = () => {
                                             placeholder={'Name'}
                                             required
                                         />
-                                        {/*{formik.touched.name && <div className={styles.error}>{formik.errors.name}</div>}*/}
                                     </div>
                                     <div className={styles.formGroup}>
                                         <input
