@@ -1,5 +1,5 @@
 import {FC, useEffect, useState} from "react";
-import styles from "./Menu.module.css"
+import styles from "./Menu.module.scss"
 import {CollapsedType} from "../Header";
 
 
