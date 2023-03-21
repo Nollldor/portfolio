@@ -1,5 +1,5 @@
 import {FC} from "react";
-import styles from "./SectionTitle.module.css"
+import styles from "./SectionTitle.module.scss"
 
 type SectionTitlePropsType = {
     title: string
