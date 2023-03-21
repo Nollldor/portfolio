@@ -1,5 +1,5 @@
 import {ButtonHTMLAttributes, DetailedHTMLProps, FC} from "react";
-import styles from './Button.module.css'
+import styles from './Button.module.scss'
 
 
 type ButtonPropsType = {
