@@ -4,7 +4,6 @@ import {Header} from "../components/header/Header";
 import {Home} from "../components/home/Home";
 import {Skills} from "../components/skills/Skills";
 import {Works} from "../components/works/Works";
-import {RemoteJob} from "../components/remoteJob/RemoteJob";
 import {Contacts} from "../components/Contacts/Contacts";
 import {Footer} from "../components/Footer/Footer";
 
@@ -16,7 +15,6 @@ function App() {
                 <Home/>
                 <Skills/>
                 <Works/>
-                {/*<RemoteJob />*/}
                 <Contacts/>
             </main>
             <Footer />
