@@ -1,5 +1,5 @@
 import {FC} from "react";
-import container from "../../common/styles/Container.module.css";
+import container from "../../common/styles/Container.module.scss";
 import styles from "./Works.module.scss"
 import {Work} from "./work/Work";
 import {SectionTitle} from "../SectionTitle/SectionTitle";

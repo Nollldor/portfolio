@@ -1,6 +1,6 @@
 import {FC} from "react";
 import styles from "./Home.module.scss"
-import container from "../../common/styles/Container.module.css"
+import container from "../../common/styles/Container.module.scss"
 import commonStyles from "../../common/styles/CommonStyles.module.css"
 
 type MainType = {}

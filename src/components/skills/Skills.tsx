@@ -1,6 +1,6 @@
 import {FC} from "react";
 import styles from "./Skills.module.scss"
-import container from "../../common/styles/Container.module.css";
+import container from "../../common/styles/Container.module.scss";
 import {Skill} from "./skill/Skill";
 import {SectionTitle} from "../SectionTitle/SectionTitle";
 import {SkillsState} from "./skill/skills-state";

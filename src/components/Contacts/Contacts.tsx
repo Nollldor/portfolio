@@ -1,6 +1,6 @@
 import {FC} from "react";
 import styles from "./Contacts.module.scss"
-import container from "../../common/styles/Container.module.css"
+import container from "../../common/styles/Container.module.scss"
 import {SectionTitle} from "../SectionTitle/SectionTitle";
 import {faRoute} from "@fortawesome/free-solid-svg-icons";
 import {faEnvelopeCircleCheck} from "@fortawesome/free-solid-svg-icons";
