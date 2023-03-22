@@ -1,3 +1,5 @@
+@import "../../../common/styles/variables";
+
 .workBlockWrapper {
   flex: 0 0 100%;
   max-width: 100%;
@@ -5,21 +7,21 @@
   width: 100%;
   min-height: 1px;
   padding: 15px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tabletop) {
     flex: 0 0 50%;
     max-width: 50%;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $smallDesktop) {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
   }
 
   .workBlock {
-    background: #fff;
+    background: $primaryColor;
     box-shadow: 0px 1px 27px -3px RGB(0 0 0 / 20%);
     border-radius: 5px;
     overflow: hidden;
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: $smallDesktop-1px) {
       margin-top: 15px;
       margin-bottom: 15px;
     }
@@ -32,13 +34,13 @@
 
     .content {
       padding: 15px;
-      @media screen and (max-width: 991px) {
+      @media screen and (max-width: $smallDesktop-1px) {
         margin-top: 15px;
         margin-bottom: 15px;
       }
 
       & h4 {
-        color: #151515;
+        color: $fontSecondColor;
         font-size: 18px;
         margin: 0 0 20px;
         font-weight: 600;
@@ -52,7 +54,7 @@
 
       .readMore {
         .readMoreLink {
-          color: #151515;
+          color: $fontSecondColor;
           font-weight: 600;
           position: relative;
           padding: 3px;

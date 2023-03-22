@@ -1,3 +1,5 @@
+@import "../../common/styles/variables";
+
 .nav {
   display: flex;
   right: 0;
@@ -7,7 +9,7 @@
   top: 10px;
   padding: 15px 10px;
   transition: all 0.2s ease;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: $smallDesktop-1px) {
     flex-flow: row nowrap;
     justify-content: flex-start;
     padding: 10px 15px;
@@ -20,10 +22,10 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: $smallDesktop) {
       flex-wrap: nowrap;
     }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: $smallDesktop-1px) {
       padding-right: 0;
       padding-left: 0;
     }
@@ -50,7 +52,7 @@
         bottom: 12px;
         right: -9px;
         float: left;
-        background: #00c6ff;
+        background: $accentColor;
       }
     }
 
@@ -66,7 +68,7 @@
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $smallDesktop) {
         display: none;
       }
 
@@ -75,7 +77,7 @@
         width: 22px;
         height: 2px;
         border-radius: 1px;
-        background: #fff;
+        background: $primaryColor;
       }
     }
   }

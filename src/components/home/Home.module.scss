@@ -1,3 +1,5 @@
+@import "../../common/styles/variables";
+
 .homeBlock {
   position: relative;
   background-repeat: no-repeat;
@@ -20,15 +22,15 @@
       position: relative;
       width: 100%;
       min-height: 1px;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tabletop) {
         flex: 0 0 100%;
         max-width: 100%;
       }
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $smallDesktop) {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
         flex: 0 0 50%;
         max-width: 50%;
       }
@@ -38,7 +40,7 @@
         padding-left: 45px;
         z-index: 1;
         margin-top: 50px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: $tabletop-1px) {
           padding-left: 25px;
         }
 
@@ -49,16 +51,16 @@
           bottom: 0;
           content: "";
           position: absolute;
-          background: linear-gradient(to right, #0072ff, #00c6ff);
+          background: linear-gradient(to right, $accentGradientColor, $accentColor);
         }
 
         & h4 {
           font-size: 20px;
-          color: #fff;
+          color: $primaryColor;
           margin: 0 0 5px;
-          @media screen and (max-width: 767px) {
+          @media screen and (max-width: $tabletop-1px) {
             font-size: 16px;
-            color: #fff;
+            color: $primaryColor;
             margin: 0 0 5px;
           }
         }
@@ -67,9 +69,9 @@
           font-family: 'Sunflower', sans-serif;
           font-size: 65px;
           font-weight: 700;
-          color: #fff;
+          color: $primaryColor;
           margin: 0 0 15px;
-          @media screen and (max-width: 767px) {
+          @media screen and (max-width: $tabletop-1px) {
             font-size: 36px;
             margin: 0 0 10px;
           }
@@ -81,9 +83,9 @@
           font-weight: 400;
           font-size: 18px;
           padding: 0 0 35px;
-          color: #fff;
+          color: $primaryColor;
           margin: 0;
-          @media screen and (max-width: 767px) {
+          @media screen and (max-width: $tabletop-1px) {
             font-size: 14px;
             padding: 0 0 20px;
           }
@@ -91,7 +93,7 @@
 
         .cvLinkWrapper {
           .cvLink {
-            color: #fff;
+            color: $primaryColor;
             text-transform: uppercase;
             letter-spacing: 2px;
             font-size: 18px;
@@ -102,7 +104,7 @@
             transition: ease all 0.3s;
 
             &::before {
-              background: #fff;
+              background: $primaryColor;
               content: "";
               width: 0;
               height: 1px;
@@ -122,7 +124,7 @@
               bottom: 0;
               opacity: 0.5;
               transition: ease all 0.3s;
-              background: linear-gradient(to right, #0072ff, #00c6ff)
+              background: linear-gradient(to right, $accentGradientColor, $accentColor)
             }
 
             &:hover::after {
@@ -157,7 +159,7 @@
       display: block;
       position: relative;
       border-radius: 10px;
-      background: #fff;
+      background: $primaryColor;
       width: 3px;
       height: 8px;
       top: 4px;

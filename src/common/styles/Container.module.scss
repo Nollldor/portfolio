@@ -1,19 +1,21 @@
+@import "./variables";
+
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: $mobile) {
     max-width: 540px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tabletop) {
     max-width: 720px;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $smallDesktop) {
     max-width: 960px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     max-width: 1140px;
   }
 }

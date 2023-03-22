@@ -1,3 +1,5 @@
+@import "../../../common/styles/variables";
+
 .skillBlockWrapper {
   flex: 0 0 100%;
   max-width: 100%;
@@ -5,11 +7,11 @@
   width: 100%;
   min-height: 1px;
   padding: 15px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tabletop) {
     flex: 0 0 50%;
     max-width: 50%;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $smallDesktop) {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
   }
@@ -19,11 +21,11 @@
     text-align: center;
     position: relative;
     z-index: 1;
-    background: #fff;
+    background: $primaryColor;
     margin: 15px 0;
     border-radius: 5px;
     box-shadow: 0px 1px 27px -3px RGB(0 0 0 / 20%);
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: $smallDesktop-1px) {
       margin: 15px 0;
     }
 
@@ -35,10 +37,10 @@
       border-radius: 50%;
       line-height: 100px;
       font-size: 40px;
-      color: #fff;
+      color: $primaryColor;
       margin-bottom: 30px;
       transition: ease all 0.3s;
-      background: #00c6ff;
+      background: $accentColor;
     }
 
     &:hover .icon {
@@ -48,7 +50,7 @@
     .content {
       & h5 {
         font-size: 16px;
-        color: #151515;
+        color: $fontSecondColor;
         margin-bottom: 15px;
         font-weight: 700;
         font-family: inherit;

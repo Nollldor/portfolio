@@ -1,3 +1,5 @@
+@import "../../common/styles/variables";
+
 .SectionTitleWrapper {
   flex-wrap: wrap;
   margin-right: -15px;
@@ -13,11 +15,11 @@
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tabletop) {
       flex: 0 0 83.333333%;
       max-width: 83.333333%;
     }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: $smallDesktop) {
       flex: 0 0 58.333333%;
       max-width: 58.333333%;
     }
@@ -29,7 +31,7 @@
       font-size: 35px;
       display: inline-block;
       z-index: 1;
-      color: #151515;
+      color: $fontSecondColor;
       font-family: 'Sunflower', sans-serif;
       line-height: 1.2;
     }

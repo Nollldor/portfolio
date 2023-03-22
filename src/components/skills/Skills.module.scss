@@ -1,5 +1,7 @@
+@import "../../common/styles/variables";
+
 .skillsBlock {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     height: auto;
   }
 
@@ -9,7 +11,7 @@
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tabletop) {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
