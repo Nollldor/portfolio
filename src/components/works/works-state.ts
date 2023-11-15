@@ -9,27 +9,17 @@ type WorkStateType = {
 export const WorksState: WorkStateType[] = [
     {
         title: "TodoList",
-        subtitle: "blablabl blablablablabl ablablablabla ablablablabla ablablablabla ablablablabla ablablablabla",
+        subtitle: "Development of a web application for task management, built on React and Redux technologies. The project provides users with a convenient and intuitive interface for creating, tracking, and managing tasks in everyday life.",
         icon: work1Image
     },
     {
-        title: "Social Network",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        title: "Flash Cards",
+        subtitle: "This web application project focuses on individualized learning through flashcards while leveraging a team-oriented development approach. The application, crafted with RTK Query  collaborative team setting.",
         icon: work1Image
     },
     {
-        title: "Social Network",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        icon: work1Image
-    },
-    {
-        title: "Social Network",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        icon: work1Image
-    },
-    {
-        title: "Social Network",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        title: "Portfolio",
+        subtitle: "Developed using React, this Single Page Application (SPA) is designed to efficiently present information in a straightforward manner.",
         icon: work1Image
     },
 ]

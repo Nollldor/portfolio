@@ -13,7 +13,7 @@ export const Skills: FC<SkillsPropsType> = () => {
         <section id={"skills"} className={styles.skillsBlock}>
             <div className={`${container.container} ${styles.skillsContainer}`}>
                 <SectionTitle title={"Skills"}
-                              subTitle={"I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface."}/>
+                              subTitle={"My services include: Building dynamic and responsive user interfaces, working with modern frameworks and libraries such as React, integrating with various APIs and third-party services."}/>
                 <div className={styles.skills}>
                     {
                         SkillsData.map((skill, id) => <Skill key={id} title={skill.title}

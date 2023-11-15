@@ -24,7 +24,7 @@ export const Home: FC<MainType> = () => {
                         <div className={styles.content}>
                             <h4>Hello, my name is</h4>
                             <h5>Arthur Ishmiev</h5>
-                            <p>I'm the frontend based in Canada. I make the visual to be more interactive.</p>
+                            <p>I'm the frontend based in Saint-Petersburg. I make the visual to be more interactive.</p>
                             <div className={styles.cvLinkWrapper}>
                                 <a href="#" className={styles.cvLink}>Download CV</a>
                             </div>

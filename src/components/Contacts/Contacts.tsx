@@ -20,16 +20,13 @@ export const Contacts: FC<ContactsPropsType> = () => {
         <section id={"contacts"} className={styles.contactsBlock}>
             <div className={`${container.container} ${styles.contactsContainer}`}>
                 <SectionTitle title={"Contacts"}
-                              subTitle={"I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface."}/>
+                              subTitle={"I'm excited about the possibility of connecting with you. Whether you have a project you'd like to discuss, questions about our services, or just want to say hello, I'm here to chat. Reach out to me through any of the following channels"}/>
                 <div className={styles.contactBoxWrapper}>
                     <div className={styles.contactBox}>
                         <div className={styles.column}>
                             <div className={styles.contactInfoBox}>
                                 <h2 className={styles.subTitle}>Get In Touch</h2>
-                                <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                    do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam,</p>
+                                <p className={styles.desc}>I'm eager to answer your inquiries, dive into your ideas, and explore how we can collaborate to bring your vision to fruition. Drop me a message anytime – I'm looking forward to our conversation!</p>
                                 <div className={styles.contactInfo}>
                                     <FontAwesomeIcon className={styles.icon} icon={faRoute} transform={"shrink-6"}/>
                                     <p>301 The Greenhouse</p>
