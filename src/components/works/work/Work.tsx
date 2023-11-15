@@ -8,9 +8,10 @@ type WorkPropsType = {
     title: string
     icon: string
     description: string
+    link: string
 }
 
-export const Work: FC<WorkPropsType> = ({title, description, icon}) => {
+export const Work: FC<WorkPropsType> = ({title, description, icon,link}) => {
 
     return (
         <div className={styles.workBlockWrapper}>
@@ -22,7 +23,7 @@ export const Work: FC<WorkPropsType> = ({title, description, icon}) => {
                     <h4 className={styles.workTitle}>{title}</h4>
                     <p className={styles.workDescription}>{description}</p>
                     <div className={styles.readMore}>
-                        <a href="#" className={styles.readMoreLink}>
+                        <a href={link} className={styles.readMoreLink}>
                             Read more
                             <FontAwesomeIcon icon={faArrowRight} className={styles.readMoreIcon}/>
                         </a>
